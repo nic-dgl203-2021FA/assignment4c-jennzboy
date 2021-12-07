@@ -1,0 +1,47 @@
+/* ########## Animated Word ########## */
+
+#animatedWord {
+    animation: scaleDown 3s 1s backwards infinite;
+}
+
+@keyframes scaleDown {
+    0% {
+      transform: scale(1.3);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+/* ########## Animated Button ########## */
+
+#animatedButton {
+  transition: background 0.4s ease-in, transform 0.2s 0.1s ease-in-out,
+    border-radius 0.3s ease-in;
+
+    &:hover {
+      transform: scale(1.1);
+      background: #63a088;
+      color: #f4f3ee;
+      border-radius: 5px;
+    }
+}
+
+/* ########## Variable Font Animation ########## */
+
+#variableFont {
+  font-family: 'Urbanist', sans-serif;
+  animation: variable 7s linear infinite;
+}
+
+@keyframes variable {
+  0% {
+    font-variation-settings: "wght" 100;
+  }
+  100% {
+    font-variation-settings: "wght" 900;
+  }
+}
